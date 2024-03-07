@@ -1,3 +1,7 @@
 E:\RacerForce\RF\RF\x64\Debug\RF.vcxproj.AssemblyReference.cache
 E:\RacerForce\RF\RF\x64\Debug\RF.vcxproj.GenerateResource.cache
 E:\RacerForce\RF\RF\x64\Debug\RF.RacerBile.resources
+E:\RacerForce\RacerForce\RF\x64\Debug\RF.vcxproj.AssemblyReference.cache
+E:\RacerForce\RacerForce\RF\x64\Debug\RF.RacerBile.resources
+E:\RacerForce\RacerForce\RF\x64\Debug\RF.vcxproj.GenerateResource.cache
+E:\RacerForce\RacerForce\RF\x64\Debug\RF.Track.resources
