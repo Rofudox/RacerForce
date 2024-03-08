@@ -9,6 +9,7 @@ namespace RF {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
+
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
@@ -149,6 +150,11 @@ namespace RF {
 #pragma endregion
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 		label2->Text = System::Convert::ToString("Start");
+		RF::Track track;
+
+		this->Close();
+		
+		track.ShowDialog();
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		label2->Text = System::Convert::ToString("Stop");
