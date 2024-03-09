@@ -318,3 +318,101 @@ To clean up after a function or constructor we can use the ~ symbol infront of a
         std::cout << "Goodbye " << title;
     }
 */
+
+//Reference
+/*
+References(adresses) are made as:
+    int  Val_1 = 10;
+    int &Val_2 = Val_1;
+
+in function parameters, we can make refs as:
+    void swap(int &i, int &j) {
+    int temp = i;
+    i = j;
+    j = temp;
+    }
+in function:
+    int T(int &i) {
+    i = i *3
+    return i;
+    }
+the function will return i and reuse the new value if called again. 
+
+To get the adress of a variable in hexadecimal:
+    std::cout << &i;
+*/
+
+//Pointers
+/*
+Pointers can hold the types: int, double, char and bool (not strings)
+int* number;
+
+To make a ref to a pointer:
+    int v_1 = 2;
+    int* p_1 = &v_1;
+
+    to print the value of p_1:
+    std::cout << *p_1;
+
+Nullpointers in C++:
+    Nullpointers provides typesafe pointers with empty pointers:
+
+    int* p_1 = nullptr;
+
+*/
+
+//Memory allocation
+/*
+To dynamicaly allocate memory during runtime there are 2 options:
+    
+    To allocate v_1
+    v_1 = new int[num];
+
+    To free the memory
+    delete v_1;
+
+*/
+
+//File I/O
+/*
+To read/write from texts:
+    #include <iostream>
+    #include <string>
+    #include <fstream>
+
+    ifstream inFile; <-- The decleration
+
+    int main() {
+        inFile.open("docu.txt");
+        if (inFile.fail())
+            cout:: endl << "file not found" << endl;
+        else{
+            while (!inFile.eof()) { 
+                getline(inFile, str);
+                cout << str << endl;
+            }
+            inFile.close();
+        } return (0);
+    }
+        
+*/
+
+//Writing to file
+/*
+Excample how to write to files:
+    #include <fstream>
+    using namespace std;
+    ofstream outFile;
+    float a = 4.3f, b = 2.2f;
+    
+    int main() {
+        outFile.open("text.txt");
+        if (outFile.fail())
+            std::cout << endl << "file 404" << endl;
+        else {
+            outFile << "a = " << a << endl;
+            outFile.close();
+            }
+            return (0);
+    }
+*/
